@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "my_instance" {
   ami                   ="ami-0166fe664262f664c"
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   count                  = 1
   key_name               = "pinku"
   associate_public_ip_address = true
